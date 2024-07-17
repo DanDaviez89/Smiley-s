@@ -20,7 +20,7 @@ const whereBased = () => {
         </div>
 
         <img
-          src="./src/assets/treeCutting.png"
+          src="./public/assets/treeCutting.png"
           alt="Tree cutting before and after"
           className="tree-cut"
         />
