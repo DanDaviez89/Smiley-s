@@ -8,17 +8,19 @@ html,
 body {
   overflow-x: hidden;
   width: 100%;
+  background-color: #193400;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Itim", cursive;
+  font-family: "Lilita One", sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: 2px;
   cursor: default;
+  color: #f9c905;
 }
 
 p,
@@ -29,6 +31,7 @@ button {
   line-height: 22px;
   letter-spacing: 0.25px;
   cursor: default;
+  color: #f9c905;
 }
 
 h1 {
@@ -62,7 +65,7 @@ h1 {
 
 .contact-details img {
   width: 2em;
-  margin: 1em;
+  margin: 1rem 0.75rem;
   display: flex;
 }
 
@@ -78,14 +81,24 @@ h1 {
   margin: 1rem 0;
 }
 
+.hero-content {
+  min-width: 40vw;
+}
+
+.hero-content p {
+  max-width: 80%;
+  margin: 1rem auto;
+}
+
 .hero-content button {
-  padding: 0.4rem 1.2rem;
-  background-color: #80a92a;
+  padding: 0.75rem 2rem;
+  background-color: #f9c905;
   color: black;
 
   font-weight: 600;
   font-size: 1.25rem;
   line-height: normal;
+  font-family: "Lilita One", sans-serif;
 
   border: 1px solid black;
   border-radius: 15px;
@@ -97,7 +110,7 @@ h1 {
 }
 
 .hero-content button:hover {
-  background-color: #9acc2d;
+  background-color: #face21;
 }
 
 .hero-images {
@@ -149,6 +162,11 @@ h1 {
 
 .work-cover-container p {
   margin: 1.5rem 0;
+  color: black;
+}
+
+.work-cover-container h1 {
+  color: black;
 }
 
 .work-cover-container p span {
@@ -199,7 +217,7 @@ h1 {
 .where-based-container {
   width: 100%;
   text-align: center;
-  padding: 3rem 0.3rem 5rem;
+  padding: 3rem 0.3rem;
 }
 
 .where-based-container h1 {
@@ -223,15 +241,16 @@ h1 {
 }
 
 .where-based-locations img {
-  width: 2.25rem;
+  width: 2rem;
+  margin-right: 0.5rem;
 }
 
 .tree-cut {
-  transform: rotate(270deg);
   width: 100%;
-  margin-top: 4rem;
+  max-width: 40rem;
+  margin-top: 1rem;
   border-radius: 24px;
-  border: 1px solid black;
+  border: 1px solid #f9c905;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
@@ -247,15 +266,21 @@ h1 {
 }
 
 .contact-container h1 {
-  font-size: 2.5rem;
+  font-size: calc(2.3rem + 3vh);
+  color: black;
+}
+
+.contact-container h3 {
+  color: black;
 }
 
 .contact-container p {
   font-weight: 600;
+  color: black;
 }
 
 .contact-container > * {
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .contact-number {
@@ -278,10 +303,17 @@ h1 {
 .footer {
   width: 100%;
   text-align: center;
-  padding: 0;
+  padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  max-width: 25rem;
 }
 
 .footer img {
@@ -299,6 +331,12 @@ h1 {
     padding: 1rem;
   }
 
+  .navigation-contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .contact-details {
     display: flex;
     align-items: center;
@@ -309,14 +347,13 @@ h1 {
     justify-content: center;
     align-items: center;
     position: relative;
-    left: 10%;
     gap: 1rem;
-    margin: 2rem 0 6rem;
-    max-width: 1200px;
+    margin: 2rem auto 6rem;
+    max-width: 1400px;
   }
 
   .hero-images {
-    max-width: 600px;
+    max-width: 700px;
   }
 
   .work-cover-container {
@@ -336,7 +373,7 @@ h1 {
 
   .where-based-content {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -349,13 +386,11 @@ h1 {
   }
 
   .tree-cut {
-    width: 30vw;
-    margin: 4rem auto;
-    max-width: 50%;
+    margin: 2rem auto;
   }
 
   .where-based-locations div h3 {
-    font-size: calc(0.5rem + 2.5vh);
+    font-size: calc(0.5rem + 2vh);
     margin-left: 0.3rem;
   }
 
@@ -368,20 +403,34 @@ h1 {
     margin: 1rem auto;
   }
 
-  @media only screen and (min-width: 800px) {
-    .where-based-locations div h3 {
-      font-size: calc(0.5rem + 3.5vh);
-    }
+  .footer {
+    padding: 1rem 2rem 1rem 1rem;
+  }
+}
 
-    .where-based-locations div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 1rem;
-    }
+@media only screen and (min-width: 800px) {
+  .where-based-locations div h3 {
+    font-size: calc(0.5rem + 2vh);
+    margin-right: 2rem;
+  }
 
-    .navigation-container {
-      padding: 1rem 2rem 1rem 1rem;
-    }
+  .where-based-locations div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .where-based-locations {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .where-based-locations img {
+    margin-right: 0.25rem;
+  }
+
+  .navigation-container {
+    padding: 1rem 2rem 1rem 1rem;
   }
 }

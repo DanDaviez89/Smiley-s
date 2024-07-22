@@ -1,7 +1,7 @@
 const whereBased = () => {
   return (
     <div className="where-based-container">
-      <h1>Where We're Based?</h1>
+      <h1>Where Are We Based?</h1>
 
       <div className="where-based-content">
         <div className="where-based-locations">
@@ -20,7 +20,7 @@ const whereBased = () => {
         </div>
 
         <img
-          src="./public/assets/treeCutting.png"
+          src="./src/assets/hedgeWork.jpg"
           alt="Tree cutting before and after"
           className="tree-cut"
         />

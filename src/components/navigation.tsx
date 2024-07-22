@@ -22,7 +22,7 @@ const navigation = () => {
           <img src="./src/assets/SmallIcons/phone.png" alt="Phone Symbol" />
           <div>
             <h3>Call Us</h3>
-            <p>01554746922</p>
+            <p>01554 746922</p>
           </div>
         </div>
       </div>

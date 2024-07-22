@@ -13,12 +13,18 @@ const App = () => {
       <WhereBased />
       <Contact />
       <div className="footer">
-        <img
-          className="footer-logo"
-          src="./src/assets/smiley'sLogoTrans.png"
-          alt="Smiley's Logo"
-        />
-        <h2>Smileys Landscaping and Tree Specialists</h2>
+        <div className="footer-logo">
+          <img
+            className="footer-logo"
+            src="./src/assets/smiley'sLogoTrans.png"
+            alt="Smiley's Logo"
+          />
+          <h2>Smileys Landscaping and Tree Specialists</h2>
+        </div>
+
+        <div className="footer-social">
+          <h3>Social Media</h3>
+        </div>
       </div>
     </div>
   );

@@ -18,11 +18,11 @@ const whatCover = () => {
       job: "Turfing",
     },
     {
-      img: "./src/assets/SmallIcons/fencing.png",
+      img: "./src/assets/SmallIcons/fence.png",
       job: "Fencing",
     },
     {
-      img: "./src/assets/SmallIcons/fountain.png",
+      img: "./src/assets/SmallIcons/waterFeatures.png",
       job: "Water Features",
     },
     {
